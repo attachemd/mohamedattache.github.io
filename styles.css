@@ -1,0 +1,347 @@
+
+
+
+@font-face {
+    font-family: 'Sacramento';
+    src: url('font/Sacramento/Sacramento-Regular.ttf') format('truetype');
+
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url('font/Montserrat/Montserrat-Regular.ttf') format('truetype');
+
+}
+
+@font-face {
+    font-family: 'IstokWeb';
+    src: url('font/Istok_Web/IstokWeb-Regular.ttf') format('truetype');
+
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: Montserrat, sans-serif;
+    font-weight: bolder;
+}
+
+html {
+    height: 100%;
+
+}
+
+body {
+    font-family: sans-serif;
+    /*background-image: url("image.jpg");*/
+    /*background-attachment: fixed;*/
+    /*background-position: bottom;*/
+    /*background-size: cover;*/
+    /*background-repeat: no-repeat;*/
+    min-height: 100%;
+    /*background-image: linear-gradient(*/
+    /*        135deg,*/
+    /*        #00091f, #001340*/
+    /*)*/
+}
+
+header {
+    color: #fff;
+}
+
+/*nav {*/
+/*    width: 100px;*/
+/*    !*background-color: white;*!*/
+/*    position: absolute;*/
+/*    top: 20%;*/
+/*    right: 0;*/
+/*}*/
+
+/*nav a {*/
+/*    writing-mode: vertical-rl;*/
+/*    margin: 10px;*/
+/*    color: rgba(255, 255, 255, 0.4);*/
+/*}*/
+
+.img_details_cntnr {
+    position: absolute;
+    /*top: 20%;*/
+    /*left: 100px;*/
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: row;
+    perspective: 1000px;
+}
+
+.portfolio_image {
+    width: 300px;
+    height: 500px;
+    /*background-color: white;*/
+    /*background-image: url("Hind et mery edited 01.jpg");*/
+    /*background-size: cover;*/
+    /*background-position: center;*/
+    position: relative;
+    display: flex;
+    /*justify-content: center;*/
+    /*flex-direction: row;*/
+    /*align-items: center;*/
+    transform: rotateY(10deg) rotateX(20deg);
+    /*cursor: pointer;*/
+}
+
+@keyframes slide {
+    0% {
+        transform: rotateY(10deg) rotateX(20deg);
+    }
+    50% {
+        transform: rotateY(20deg) rotateX(30deg);
+    }
+    100% {
+        transform: rotateY(0deg) rotateX(0deg);
+    }
+}
+
+/*body:hover .portfolio_image {*/
+/*    !*transform: rotateY(0deg) rotateX(0deg);*!*/
+/*    animation: slide 1s ease-in-out .5s infinite alternate;*/
+/*}*/
+
+/*body:active .portfolio_image {*/
+/*    !*transform: rotateY(0deg) rotateX(0deg);*!*/
+/*    animation-play-state: paused;*/
+/*}*/
+
+.portfolio_image .name {
+    color: red;
+    position: absolute;
+    font-size: 15px;
+    font-weight: 900;
+    white-space: nowrap;
+    font-family: 'Sacramento', sans-serif;
+}
+
+.portfolio_image .other {
+    color: red;
+    position: absolute;
+    font-size: 400px;
+    font-weight: 900;
+    white-space: nowrap;
+    font-family: 'Open Sans', sans-serif;
+    /*font-family: Montserrat, sans-serif;*/
+
+    background-image: url('Hind et mery edited 01.jpg');
+    background-size: 300px;
+    background-position: center;
+    background-repeat: no-repeat;
+    /*text-align: center;*/
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    /*-webkit-text-stroke: 1px #fff;*/
+    /*border: 1px solid #fff;*/
+}
+
+/*.portfolio_image .other2 {*/
+/*    !*color: red;*!*/
+/*    !*position: absolute;*!*/
+/*    font-size: 400px;*/
+/*    font-weight: 900;*/
+/*    white-space: nowrap;*/
+/*    font-family: 'Open Sans', sans-serif;*/
+/*    text-shadow: 0 5px 10px rgba(0,0,0,0.5);*/
+/*    */
+/*}*/
+
+.portfolio_image::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url("Hind et mery edited 01.jpg");
+    background-size: cover;
+    background-position: center;
+    /*filter: grayscale(100%);*/
+    /*filter: blur(10px);*/
+}
+
+.portfolio_image .name_top {
+    /*color: red;*/
+    position: absolute;
+    font-size: 80px;
+    white-space: nowrap;
+    font-family: Sacramento;
+    /*height: 200px;*/
+    /*width: 1500px;*/
+
+    background-image: url('Hind et mery edited 01.jpg');
+    background-size: 300px;
+    background-position: center;
+    background-repeat: no-repeat;
+    /*text-align: center;*/
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+.portfolio_image .name_bottom {
+    color: red;
+    position: absolute;
+    z-index: -1;
+    font-size: 80px;
+    white-space: nowrap;
+    font-family: Sacramento;
+}
+
+.portfolio_dtl {
+    width: min-content;
+    height: 500px;
+    /*background-color: gray;*/
+    padding: 50px 0 0 20px;
+}
+
+.portfolio_dtl div {
+    color: var(--light-color);
+
+}
+
+.portfolio_dtl .portfolio_dtl_sub_cntnr {
+    /*color: wheat;*/
+
+}
+
+.portfolio_dtl .name {
+    /*color: wheat;*/
+    /*position: absolute;*/
+    font-size: 80px;
+    font-weight: 100;
+    white-space: nowrap;
+    font-family: 'Sacramento', sans-serif;
+    left: -150px;
+    position: relative;
+    mix-blend-mode: difference;
+}
+
+.portfolio_dtl .job {
+    /*color: rgba(255, 255, 255, 0.45);*/
+    /*color: wheat;*/
+    position: relative;
+}
+
+.portfolio_dtl .desc {
+    /*font-family: IstokWeb, serif;*/
+    font-size: 14px;
+    font-weight: 100;
+    color: rgba(245, 222, 179, 0.4);
+    margin-top: 20px;
+}
+
+.name:before, .name:after {
+    display: block;
+    content: 'Hind Attache';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    opacity: .8;
+}
+
+.name:after {
+    color: #ff000c;
+    z-index: -2;
+}
+
+.name:before {
+    color: #00fff3;
+    z-index: -1;
+}
+
+/*.job:before, .job:after {*/
+/*    display: block;*/
+/*    content: 'ENSAH student';*/
+/*    position: absolute;*/
+/*    top: 0;*/
+/*    left: 0;*/
+/*    height: 100%;*/
+/*    width: 100%;*/
+/*    opacity: .8;*/
+/*}*/
+
+/*.job:after {*/
+/*    color: #ff000c;*/
+/*    z-index: -2;*/
+/*}*/
+
+/*.job:before {*/
+/*    color: #00fff3;*/
+/*    z-index: -1;*/
+/*}*/
+
+:root {
+    --trans: 2px;
+}
+
+@keyframes glitch {
+    0% {
+        transform: translate(0);
+    }
+    20% {
+        transform: translate(calc(var(--trans) * -1), var(--trans));
+    }
+    40% {
+        transform: translate(calc(var(--trans) * -1), calc(var(--trans) * -1));
+    }
+    60% {
+        transform: translate(var(--trans), var(--trans));
+    }
+    80% {
+        transform: translate(var(--trans), calc(var(--trans) * -1));
+    }
+    to {
+        transform: translate(0);
+    }
+}
+
+.name:before {
+     animation: glitch .3s cubic-bezier(.25, .46, .45, .94) both infinite;
+ }
+
+.name:after {
+     animation: glitch .3s cubic-bezier(.25, .46, .45, .94) reverse both infinite;
+ }
+
+.image-mask {
+    background-size: cover;
+    background-image: url('Hind et mery.jpg');
+    background-position: center;
+    text-align: center;
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    font: 700 15vw 'Open Sans', sans-serif;
+}
+
+/* Background layer with an image */
+.backdrop {
+    background-image: url("Hind et mery edited 01.jpg");
+    background-position: center;
+    background-size: contain;
+    margin: auto;
+    width: 75vw;
+    image-orientation: 0deg;
+}
+
+/* Dark foreground layer, with white text, set to "multiply" mix blend mode */
+.text {
+    color: white;
+    border: 4px solid;
+    background: rgba(65, 65, 65, 0.88);
+    mix-blend-mode: multiply;
+    font: lighter 12vw 'MyWebFont';
+    text-align: center;
+    margin: 0;
+}

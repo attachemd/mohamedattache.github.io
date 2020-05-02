@@ -1,0 +1,275 @@
+/* demo styles
+--------------------------------------------- */
+
+/** {*/
+/*    margin:0;*/
+/*    padding:0;*/
+/*}*/
+
+/*body {*/
+/*    font: 100% / 1.5 Arial;*/
+/*}*/
+
+#bg {
+    height: 100vh;
+    width: 100vw;
+    /*background-color: #00fff3;*/
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+nav {
+    position: fixed;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 999;
+    width: min-content;
+    height: max-content;
+    mix-blend-mode: difference;
+    /*display: flex;*/
+    /*justify-content: center;*/
+}
+
+/*nav li {*/
+/*    margin: 10px;*/
+/*}*/
+
+nav a {
+    /*writing-mode: vertical-rl;*/
+    color: rgb(255, 255, 255);
+    margin: 10px 0 10px;
+    display: block;
+    width: max-content;
+    line-height: 2;
+    text-decoration: none;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    font-size: 11px;
+    /*background-color: #dc0033;*/
+    padding-left: 10px;
+}
+
+nav a.active {
+    background-color: #dc0033;
+}
+
+/* add some padding to force scrollbars */
+.parallax__layer {
+    /*padding: 100vh 0;*/
+    height: 100vh;
+}
+
+/* centre the content in the parallax layers */
+.title {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    /*color: var(--light-color);*/
+}
+
+/* Parallax base styles
+--------------------------------------------- */
+
+.parallax {
+    font-size: 200%;
+    height: 100vh;
+    /*width: 100%;*/
+    /*height: 100%;*/
+    overflow-x: hidden;
+    overflow-y: auto;
+    perspective: 1px;
+    perspective-origin: 0 0;
+    position: relative;
+    scroll-behavior: smooth;
+    /*border: 1px solid #000;*/
+    /*transform-style: preserve-3d;*/
+}
+
+.assembly {
+    /*position: absolute;*/
+    /*top: 50%; left: 50%;*/
+    perspective: 1px;
+    perspective-origin: 0 0;
+    transform-style: preserve-3d;
+}
+
+.parallax__layer {
+    /*position: absolute;*/
+    /*top: 0;*/
+    /*left: 0;*/
+    /*right: 0;*/
+    /*bottom: 0;*/
+    transform-origin: 0 0;
+    /*transform: translateZ(-2px) scale(3);*/
+    /*transform: translateZ(0px);*/
+    position: relative;
+
+    /*background-color: rgb(12, 0, 76);*/
+
+    color: var(--light-color);
+}
+
+[data-color-tone="dark"] {
+    color: var(--dark-color);
+}
+
+.parallax__group {
+    position: relative;
+    height: 100vh;
+    /*transform-style: preserve-3d;*/
+}
+
+@keyframes fadeInFromNone {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+[data-layer-color="about"] {
+    background-image: linear-gradient(
+            135deg,
+            #00091f, #001340
+    );
+    animation: fadeInFromNone 1s 1;
+}
+
+.parallax__layer--back {
+    /*transform: translateZ(-1px) scale(2);*/
+    transform: translateZ(0);
+    /*background-color: rgb(0, 255, 255);*/
+
+    /*background-image: linear-gradient(*/
+    /*        135deg,*/
+    /*        #00091f, #001340*/
+    /*);*/
+    
+    /*background-image: linear-gradient(*/
+    /*        135deg,*/
+    /*        #030010, #0c004c*/
+    /*);*/
+
+    /*background: #A1FFCE;  !* fallback for old browsers *!*/
+    /*background: linear-gradient(to right, #FAFFD1, #A1FFCE); !* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ *!*/
+
+
+    z-index: 21;
+}
+
+
+.parallax__layer--back:before {
+    background-image: var(--bg-color-01);
+    /*background-color: var(--bg-color-01);*/
+    width: 120%;
+    height: 110%;
+    content: "";
+    position: absolute;
+    filter: blur(18px);
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+[data-layer-color="expertise"] {
+    background-image: linear-gradient(19deg, #FAACA8 0%, #DDD6F3 100%);
+    animation: fadeInFromNone 1s 1;
+}
+
+.parallax__layer--base {
+    transform: translateZ(-1px) scale(2);
+    /*transform: translateZ(0);*/
+    /*background-color: rgb(255, 0, 46);*/
+    z-index: 20;
+
+    /*background-color: #FAACA8;*/
+    background-image: var(--bg-color-02);
+
+    /*background:*/
+    /*        linear-gradient(red, transparent),*/
+    /*        linear-gradient(to top left, lime, transparent),*/
+    /*        linear-gradient(to top right, blue, transparent);*/
+    /*background-blend-mode: screen;*/
+    /* color: #000;*/
+    /*color: var(--dark-color);*/
+}
+
+[data-layer-color="education"] {
+    background-image: linear-gradient(180deg, #ff003b 0%, #ff006a 100%);
+    animation: fadeInFromNone 1s 1;
+}
+
+.parallax__layer--base2 {
+    /*transform: translateZ(-1px) scale(2);*/
+    transform: translateZ(0);
+    /*background-color: rgb(12, 0, 76);*/
+    /*background-color: #ff003b;*/
+
+    /*background-image: linear-gradient(180deg, #ff003b 0%, #ff006a 100%);*/
+
+    /*background-color: #FBDA61;*/
+    /*background-image: linear-gradient(45deg, #FBDA61 0%, #FF5ACD 100%);*/
+    /*box-shadow: 10px 0 5px -2px #888;*/
+
+    /*color: wheat;*/
+    /*color: var(--dark-color);*/
+    z-index: 21;
+}
+
+.parallax__layer--base2:before {
+    background-image: var(--bg-color-03);
+    width: 120%;
+    height: 110%;
+    content: "";
+    position: absolute;
+    filter: blur(18px);
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+[data-layer-color="langues"] {
+    background-color: rgb(12, 0, 76);
+    animation: fadeInFromNone 1s 1;
+}
+
+.parallax__layer--base3 {
+    transform: translateZ(-1px) scale(2);
+    background-color: var(--bg-color-04);
+    z-index: 20;
+    /*color: var(--dark-color);*/
+}
+
+[data-layer-color="contact-me"] {
+    background-image: linear-gradient(180deg, rgb(243, 205, 178) 0%, rgb(243, 220, 178) 100%);
+    animation: fadeInFromNone 1s 1;
+}
+
+.parallax__layer--base4 {
+    transform: translateZ(0);
+    /*background-color: rgb(255, 244, 0);*/
+    /*background-color: rgb(243, 220, 178);*/
+
+    /*background-image: linear-gradient(180deg, rgb(243, 205, 178) 0%, rgb(243, 220, 178) 100%);*/
+    
+    /*color: #0c0c4c;*/
+    /*color: var(--dark-color);*/
+    z-index: 21;
+}
+
+.parallax__layer--base4:before {
+    background-image: var(--bg-color-05);
+    width: 120%;
+    height: 110%;
+    content: "";
+    position: absolute;
+    filter: blur(18px);
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}

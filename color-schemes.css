@@ -1,0 +1,72 @@
+/******************/
+/* COLOR SCHEMES */
+
+:root {
+    --is-dark: 1;
+    --is-light: 0;
+    --color: rgb(
+            calc(9*var(--is-dark) + 245*var(--is-light)),
+            calc(0*var(--is-dark) + 222*var(--is-light)),
+            calc(56*var(--is-dark) + 179*var(--is-light))
+    );
+    --dark-color: #090038;
+    --light-color: wheat;
+    /*--light-color: red;*/
+    --bg-color-01: linear-gradient(
+            135deg,
+            #030010, #0c004c
+    );
+    --bg-color-02: linear-gradient(19deg, #FAACA8 0%, #DDD6F3 100%);
+    --bg-color-03: linear-gradient(180deg, #ff003b 0%, #ff006a 100%);
+    --bg-color-04: rgb(12, 0, 76);
+    --bg-color-05: linear-gradient(180deg, rgb(243, 205, 178) 0%, rgb(243, 220, 178) 100%);
+}
+
+:root {
+    --is-dark: 1;
+    --is-light: 0;
+    --color: rgb(
+            calc(9*var(--is-dark) + 245*var(--is-light)),
+            calc(0*var(--is-dark) + 222*var(--is-light)),
+            calc(56*var(--is-dark) + 179*var(--is-light))
+    );
+    --dark-color: #090038;
+    --light-color: wheat;
+    /*--light-color: red;*/
+    --bg-color-01: linear-gradient( 135deg, #030010, #0c004c );
+    --bg-color-02: linear-gradient(19deg, #0f0c4a 0%, #110e61 100%);
+    --bg-color-03: linear-gradient(180deg, #15176d 0%, #171877 100%);
+    --bg-color-04: rgb(30, 32, 136);
+    --bg-color-05: linear-gradient(0deg, rgb(30, 32, 135) 0%, rgb(38, 40, 160) 100%);
+}
+
+/*:root {*/
+
+/*    --dark-color: #361d32;*/
+/*    --light-color: #f1e8e6;*/
+/*    !*--light-color: red;*!*/
+/*    --bg-color-01: linear-gradient(*/
+/*            135deg,*/
+/*            #361d32, #361d32*/
+/*    );*/
+/*    --bg-color-02: linear-gradient(19deg, #543c52 0%, #543c52 100%);*/
+/*    !*--bg-color-03: linear-gradient(180deg, #f55951 0%, #f55951 100%);*!*/
+/*    --bg-color-03: linear-gradient(180deg, #dfd2de 0%, #dfd2de 100%);*/
+/*    --bg-color-04: #edd2cb;*/
+/*    --bg-color-05: linear-gradient(180deg, #f1e8e6 0%, #f1e8e6 100%);*/
+/*}*/
+
+/*:root {*/
+
+/*    --dark-color: #3c2a4d;*/
+/*    --light-color: #e0f0ea;*/
+/*    !*--light-color: red;*!*/
+/*    --bg-color-01: linear-gradient(*/
+/*            135deg,*/
+/*            #3c2a4d, #3c2a4d*/
+/*    );*/
+/*    --bg-color-02: linear-gradient(19deg, #503a65 0%, #503a65 100%);*/
+/*    --bg-color-03: linear-gradient(180deg, #574f7d 0%, #574f7d 100%);*/
+/*    --bg-color-04: #95adbe;*/
+/*    --bg-color-05: linear-gradient(180deg, #e0f0ea 0%, #e0f0ea 100%);*/
+/*}*/
