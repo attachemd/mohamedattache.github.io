@@ -2,11 +2,14 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width"/>
     <link rel="stylesheet" type="text/css" href="color-schemes.css"/>
+    <link rel="stylesheet" type="text/css" href="reset.css"/>
     <link rel="stylesheet" type="text/css" href="styles.css"/>
     <link rel="stylesheet" type="text/css" href="parallax-styles.css"/>
+    <link rel="stylesheet" type="text/css" href="media-query.css"/>
 
-    <title>Hind Attache</title>
+    <title>Mohamed Attache</title>
 </head>
 <body data-layer-color="about">
 <div id="bg" data-layer-color="about"></div>
@@ -21,10 +24,10 @@
 <nav>
     <ul>
         <li><a href="#about" class="active" data-layer="about">about</a></li>
-        <li><a href="#expertise" data-layer="expertise">expertise</a></li>
-        <li><a href="#education" data-layer="education">education</a></li>
-        <li><a href="#langues" data-layer="langues">langues</a></li>
-        <li><a href="#contact-me" data-layer="contact-me">contact me</a></li>
+        <li><a href="#expertise" data-layer="expertise">work</a></li>
+        <!--        <li><a href="#education" data-layer="education">education</a></li>-->
+        <!--        <li><a href="#langues" data-layer="langues">langues</a></li>-->
+        <li><a href="#contact-me" data-layer="contact-me">contact</a></li>
     </ul>
 </nav>
 
@@ -33,28 +36,21 @@
     <div id="about"></div>
     <div class="parallax__layer parallax__layer--back" data-layer="about">
         <div class="img_details_cntnr">
-            <div class="portfolio_image">
-                <!--        <div class="name_bottom">-->
-                <!--            Hind Attache-->
-                <!--        </div>-->
-                <!--        <div class="name_top">-->
-                <!--            Hind Attache-->
-                <!--        </div>-->
-                <!--        <div class="other2">-->
-                <!--            H-->
-                <!--        </div>-->
-                <!--        <div class="other">-->
-                <!--            H-->
-                <!--        </div>-->
 
-                <!--           <div class="name">Hind Attache</div>-->
+            <!--            <div class="plus">+</div>-->
+            <!--            <div class="circle"></div>-->
+            <div class="portfolio_image">
+                <div class="img-box"></div>
             </div>
             <div class="portfolio_dtl">
                 <div class="portfolio_dtl_sub_cntnr">
-                    <div>Hi i'm</div>
-                    <div class="name">Hind Attache</div>
-                    <div class="job">ENSAH student</div>
-                    <div class="desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. At blanditiis cum cumque distinctio, eum ex facilis itaque libero molestias nemo nostrum, odit qui sequi! Fugit, laudantium, voluptatem. Hic, libero, mollitia.</div>
+                    <div class="hi">
+                        Hi i'm
+                        <div class="square"></div>
+                    </div>
+                    <div class="name">Mohamed Attache</div>
+                    <div class="job">Full Stack Developer & UX/UI designer</div>
+                    <div class="desc">Innovative optimized solution seeker. Excited to be at the deployment phase of my new career as a web developer. I am ambitious, adventurous, assiduous, and animated.</div>
                 </div>
 
             </div>
@@ -63,22 +59,133 @@
     <div id="expertise"></div>
 
 
+    <!--    <div class="parallax__layer parallax__layer&#45;&#45;base" data-layer="expertise" data-color-tone="dark">-->
     <div class="parallax__layer parallax__layer--base" data-layer="expertise">
-        <div class="title">expertise</div>
+        <!--        <div class="project">-->
+        <!--            <div class="project-img"></div>-->
+        <!--            <h2>claculator</h2>-->
+        <!--        </div>-->
+
+        <div class="scene_cntnr">
+            <div class="scene01">
+                <div id="carousel01">
+                    <div class="carousel__cell">
+                        <a href="http://ayoubattache.com/HTML5/UE4-HTML5v1.0.html" target="_blank" class="cell-cntnt configurator">
+                            <div class="cell-title">Configurator</div>
+                        </a>
+                    </div>
+                    <div class="carousel__cell">
+                        <a href="http://enhhad.42web.io/" target="_blank" class="cell-cntnt enhhad">
+                            <div class="cell-title">انهض</div>
+                        </a>
+                    </div>
+                    <div class="carousel__cell">
+                        <a href="#" class="cell-cntnt node_manager">
+                            <div class="cell-title">Node Manager</div>
+                        </a>
+                    </div>
+
+                    <!--                    <div class="carousel__cell">-->
+                    <!--                        <div class="cell-cntnt">6</div>-->
+                    <!--                    </div>-->
+                    <!--                    <div class="carousel__cell">-->
+                    <!--                        <div class="cell-cntnt">7</div>-->
+                    <!--                    </div>-->
+                    <!--                    <div class="carousel__cell">-->
+                    <!--                        <div class="cell-cntnt">8</div>-->
+                    <!--                    </div>-->
+                    <!--                    <div class="carousel__cell">-->
+                    <!--                        <div class="cell-cntnt">9</div>-->
+                    <!--                    </div>-->
+                    <!--                    <div class="carousel__cell">-->
+                    <!--                        <div class="cell-cntnt">10</div>-->
+                    <!--                    </div>-->
+                    <!--                    <div class="carousel__cell">-->
+                    <!--                        <div class="cell-cntnt">11</div>-->
+                    <!--                    </div>-->
+                    <!--                    <div class="carousel__cell">-->
+                    <!--                        <div class="cell-cntnt">12</div>-->
+                    <!--                    </div>-->
+                    <!--                    <div class="carousel__cell">-->
+                    <!--                        <div class="cell-cntnt">13</div>-->
+                    <!--                    </div>-->
+                    <!--                    <div class="carousel__cell">-->
+                    <!--                        <div class="cell-cntnt">14</div>-->
+                    <!--                    </div>-->
+                    <!--                    <div class="carousel__cell">-->
+                    <!--                        <div class="cell-cntnt">15</div>-->
+                    <!--                    </div>-->
+                    <!--                    <div class="carousel__cell">-->
+                    <!--                        <div class="cell-cntnt">16</div>-->
+                    <!--                    </div>-->
+                </div>
+            </div>
+
+            <div class="scene02-cntnr">
+                <div class="scene02">
+                    <div id="carousel02">
+                        <div class="carousel__cell">1</div>
+                        <div class="carousel__cell">2</div>
+                        <div class="carousel__cell">3</div>
+                    </div>
+                </div>
+                <div class="cell-nmbr"></div>
+            </div>
+
+            <div class="carousel-options">
+
+                <div>
+                    <button class="previous-button">Previous</button>
+                    <button class="next-button">Next</button>
+                </div>
+
+            </div>
+        </div>
+
     </div>
-    <div id="education"></div>
-    <div class="parallax__layer parallax__layer--base2" data-layer="education" id="rii">
-        <div class="title">education</div>
-    </div>
+    <!--    <div id="education"></div>-->
+    <!--    <div class="parallax__layer parallax__layer&#45;&#45;base2" data-layer="education" id="rii">-->
+    <!--        <div class="title">education</div>-->
+    <!--    </div>-->
 
 
-    <div id="langues"></div>
-    <div class="parallax__layer parallax__layer--base3" data-layer="langues">
-        <div class="title">langues</div>
-    </div>
+    <!--    <div id="langues"></div>-->
+    <!--    <div class="parallax__layer parallax__layer&#45;&#45;base3" data-layer="langues">-->
+    <!--        <div class="title">langues</div>-->
+    <!--    </div>-->
     <div id="contact-me"></div>
-    <div class="parallax__layer parallax__layer--base4" data-layer="contact-me">
-        <div class="title">contact me</div>
+    <!--    <div class="parallax__layer parallax__layer&#45;&#45;base4" data-layer="contact-me" data-color-tone="dark">-->
+    <div class="parallax__layer parallax__layer--base2" data-layer="contact-me">
+        <div class="form-cntnr">
+
+            <div class="form-inputs-cntnr">
+                <div class="form-inputs">
+                    <form action="">
+                        <div class="input-cntnr">
+                            <input type="text" name="" required>
+                            <label>name</label>
+                        </div>
+                        <div class="input-cntnr">
+                            <input type="text" name="email" required>
+                            <label>email</label>
+                        </div>
+                        <div class="input-cntnr">
+                            <textarea name="" cols="30" rows="10" required></textarea>
+                            <label>message</label>
+                        </div>
+                        <input type="submit" value="submit">
+                    </form>
+                </div>
+            </div>
+            <div class="form-desc-cntnt">
+                <p>Casablanca/Maroc</p>
+                <p>10, Hay Amal 1, Tit Mellil</p>
+                <p>Célibataire</p>
+                <p>06 54 93 08 68</p>
+                <p>attachemd@gmail.com</p>
+            </div>
+
+        </div>
     </div>
     <div id="go"></div>
     <!--    </div>-->

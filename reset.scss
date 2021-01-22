@@ -1,0 +1,130 @@
+
+
+/* Reset */
+
+HTML, BODY, DIV, SPAN, APPLET, OBJECT, IFRAME, H1, H2, H3, H4, H5, H6, P,
+BLOCKQUOTE, PRE, A, ABBR, ACRONYM, ADDRESS, BIG, CITE, CODE, DEL, DFN,
+EM, FONT, IMG, INS, KBD, Q, S, SAMP, SMALL, STRIKE, STRONG, SUB, SUP,
+TT, VAR, HR, B, U, I, CENTER, DL, DT, DD, OL, UL, LI, FIELDSET, FORM,
+LABEL, LEGEND, TABLE, CAPTION, TBODY, TFOOT, THEAD, TR, TH, TD, BUTTON {
+    padding: 0;
+    margin: 0;
+    border: none;
+    outline: none;
+    vertical-align: baseline;
+    text-decoration: none;
+    background-color: transparent;
+}
+
+DFN, I, CITE, VAR, ADDRESS, EM {
+    font-style: normal;
+}
+
+TH, B, STRONG, H1, H2, H3, H4, H5, H6 {
+    font-weight: normal;
+}
+
+TEXTAREA, INPUT, SELECT {
+    font-family: inherit;
+    font-size: 14px;
+    color: #757575;
+}
+
+::-webkit-input-placeholder {
+    color: #757575;
+}
+
+BLOCKQUOTE, Q {
+    quotes: none;
+}
+
+Q:before, Q:after,
+BLOCKQUOTE:before,
+BLOCKQUOTE:after {
+    content: '';
+    content: none;
+}
+
+OL, UL, LI {
+    list-style: none;
+}
+
+DEL {
+    text-decoration: line-through;
+}
+
+TABLE {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+CAPTION, TH, TD {
+    text-align: right;
+}
+
+input[type="text"], input[type="password"], textarea, select {
+    outline: none;
+}
+
+input:-webkit-autofill {
+    background-color: #fff !important;
+    background-image: none;
+    color: #fff !important;
+}
+
+html {
+    box-sizing: border-box;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-smooth: always;
+}
+
+*::selection {
+    background: #C3EFFD;
+    color: #000;
+}
+
+*:focus {
+    outline: none !important;
+}
+
+.clear {
+    clear: both;
+}
+
+.clearfix:before,
+.clearfix:after {
+    content: ".";
+    display: block;
+    height: 0;
+    overflow: hidden;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+.clearfix {
+    zoom: 1;
+}
+
+img {
+    max-width: 100%;
+}
+
+body {
+    font-family: "Work Sans", serif;
+    font-size: 14px;
+    display: flex;
+    flex-flow: column;
+    height: 100%;
+    overflow: hidden;
+    color: #757575;
+    /*//background-color: black;*/
+}
+
+/* Reset End **************************************/
