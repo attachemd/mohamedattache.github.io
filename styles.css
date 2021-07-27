@@ -895,9 +895,15 @@ nav a.active {
   .img_details_cntnr {
     grid-template-columns: 250px min-content;
   }
+  .img_details_cntnr .portfolio_dtl div {
+    font-size: 2.1rem;
+  }
   .img_details_cntnr .portfolio_dtl .name {
-    left: 0;
     font-size: 7.2rem;
+  }
+  .img_details_cntnr .portfolio_dtl .desc {
+    width: 59vw;
+    font-size: 1.5rem;
   }
 
   .parallax__layer--base .scene_cntnr .scene01 {
@@ -906,7 +912,6 @@ nav a.active {
   }
   .parallax__layer--base .scene_cntnr .scene01 #carousel01 .carousel__cell .cell-cntnt .cell-title {
     font-size: 3rem;
-    bottom: -30%;
   }
 }
 :root {
@@ -946,8 +951,16 @@ nav a.active {
     justify-items: center;
   }
   .img_details_cntnr .portfolio_dtl .name {
-    font-size: 4.7rem;
+    font-size: 3.7rem;
     left: 0;
+  }
+  .img_details_cntnr .portfolio_dtl div {
+    font-size: inherit;
+  }
+  .img_details_cntnr .portfolio_dtl .desc {
+    width: inherit;
+    font-size: inherit;
+    text-align: center;
   }
 
   .form-cntnr {

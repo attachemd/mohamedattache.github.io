@@ -1321,9 +1321,17 @@ nav a.active {
         grid-template-columns: 250px min-content;
 
         .portfolio_dtl {
+
+            div {
+                font-size: 2.1rem;
+            }
             .name {
-                left: 0;
+                //left: 0;
                 font-size: 7.2rem;
+            }
+            .desc {
+                width: 59vw;
+                font-size: 1.5rem;
             }
         }
 
@@ -1345,7 +1353,7 @@ nav a.active {
 
                             .cell-title {
                                 font-size: 3rem;
-                                bottom: -30%;
+                                //bottom: -30%;
 
                             }
                         }
@@ -1411,8 +1419,18 @@ nav a.active {
             }
 
             .name {
-                font-size: 4.7rem;
+                font-size: 3.7rem;
                 left: 0;
+            }
+
+            div {
+                font-size: inherit;
+            }
+
+            .desc {
+                width: inherit;
+                font-size: inherit;
+                text-align: center;
             }
 
         }
