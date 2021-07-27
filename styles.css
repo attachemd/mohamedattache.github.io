@@ -957,6 +957,9 @@ nav a.active {
   .img_details_cntnr .portfolio_dtl div {
     font-size: inherit;
   }
+  .img_details_cntnr .portfolio_dtl .job {
+    text-align: center;
+  }
   .img_details_cntnr .portfolio_dtl .desc {
     width: inherit;
     font-size: inherit;
