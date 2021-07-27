@@ -296,7 +296,7 @@ class Carousel {
             let a = cell.querySelector('a');
             if(a){
                 if (i !== modulus) {
-                    cell.querySelector('a').style.opacity = 0.3;
+                    cell.querySelector('a').style.opacity = 0.05;
                 } else {
                     console.log("cell: ", cell);
                     cell.querySelector('a').style.opacity = 1;
