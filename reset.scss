@@ -1,5 +1,165 @@
 
 
+@font-face {
+    font-family: 'Sacramento';
+    src: url('font/Sacramento/Sacramento-Regular.ttf') format('truetype');
+
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url('font/Montserrat/Montserrat-Regular.ttf') format('truetype');
+
+}
+
+@font-face {
+    font-family: 'IstokWeb';
+    src: url('font/Istok_Web/IstokWeb-Regular.ttf') format('truetype');
+
+}
+
+//@font-face {
+//    font-family: 'Times New Roman';
+//    src: url(font/liberation-serif/LiberationSerif-Regular.ttf) format('truetype');
+//}
+
+/******************/
+/* COLOR SCHEMES */
+
+//:root {
+//    --is-dark: 1;
+//    --is-light: 0;
+//    --color: rgb(
+//                    calc(9 * var(--is-dark) + 245 * var(--is-light)),
+//                    calc(0 * var(--is-dark) + 222 * var(--is-light)),
+//                    calc(56 * var(--is-dark) + 179 * var(--is-light))
+//    );
+//    --dark-color: #090038;
+//    --light-color: wheat;
+//    //--light-color: red;
+//    /*--bg-color-01: linear-gradient(*/
+//    /*        135deg,*/
+//    /*        #030010, #0c004c*/
+//    /*);*/
+//
+//    /*--bg-color-01: linear-gradient(*/
+//    /*        135deg,*/
+//    /*        #190052, #390096*/
+//    /*);*/
+//
+//    --bg-color-01: linear-gradient(
+//                    135deg,
+//                    #080029, #110069
+//    );
+//
+//    --bg-color-02: linear-gradient(19deg, #FAACA8 0%, #DDD6F3 100%);
+//    --bg-color-03: linear-gradient(180deg, #ff003b 0%, #ff006a 100%);
+//    --bg-color-04: rgb(12, 0, 76);
+//    /*--bg-color-04: #dcbbbb;*/
+//    //--bg-color-05: linear-gradient(180deg, rgb(243, 205, 178) 0%, rgb(243, 220, 178) 100%);
+//    --bg-color-05: linear-gradient(
+//                    135deg,
+//                    #080029, #110069
+//    );
+//}
+
+//:root {
+//    --dark-color: #090038;
+//    --light-color: wheat;
+//    /*--light-color: red;*/
+//    --bg-color-01: linear-gradient(
+//                    135deg,
+//                    #030010, #0c004c
+//    );
+//    --bg-color-02: linear-gradient(180deg, #ff003b 0%, #ff006a 100%);
+//    --bg-color-03: linear-gradient(19deg, #FAACA8 0%, #DDD6F3 100%);
+//    --bg-color-04: linear-gradient(180deg, rgb(243, 205, 178) 0%, rgb(243, 220, 178) 100%);
+//    --bg-color-05: rgb(12, 0, 76);
+//}
+
+// Portfolio :root
+
+:root {
+    --is-dark: 1;
+    --is-light: 0;
+    --color: rgb(
+                    calc(9 * var(--is-dark) + 245 * var(--is-light)),
+                    calc(0 * var(--is-dark) + 222 * var(--is-light)),
+                    calc(56 * var(--is-dark) + 179 * var(--is-light))
+    );
+    --dark-color: #090038;
+    --light-color: wheat;
+    /*--light-color: red;*/
+    //--bg-color-01: linear-gradient( 135deg, #030010, #0c004c );
+    --bg-color-01: linear-gradient(
+                    135deg,
+                    #080029, #110069
+    );
+    //--bg-color-02: linear-gradient(19deg, #0f0c4a 0%, #110e61 100%);
+    //--bg-color-02: linear-gradient(19deg, #0f0c4a 0%, #0c0a48 100%);
+    --bg-color-02: linear-gradient(19deg, #0f0c4a 0%, #07062b 100%);
+    --bg-color-03: linear-gradient(180deg, #15176d 0%, #171877 100%);
+    --bg-color-04: rgb(30, 32, 136);
+    --bg-color-05: linear-gradient(0deg, rgb(30, 32, 135) 0%, rgb(38, 40, 160) 100%);
+}
+
+//:root {
+//
+//    --dark-color: #361d32;
+//    --light-color: #f1e8e6;
+//    /*--light-color: red;*/
+//    --bg-color-01: linear-gradient(
+//                    135deg,
+//                    #361d32, #361d32
+//    );
+//    --bg-color-02: linear-gradient(19deg, #543c52 0%, #543c52 100%);
+//    /*--bg-color-03: linear-gradient(180deg, #f55951 0%, #f55951 100%);*/
+//    --bg-color-03: linear-gradient(180deg, #dfd2de 0%, #dfd2de 100%);
+//    --bg-color-04: #edd2cb;
+//    --bg-color-05: linear-gradient(180deg, #f1e8e6 0%, #f1e8e6 100%);
+//}
+
+//:root {
+//
+//    --dark-color: #3c2a4d;
+//    --light-color: #e0f0ea;
+//    /*--light-color: red;*/
+//    --bg-color-01: linear-gradient(
+//                    135deg,
+//                    #3c2a4d, #3c2a4d
+//    );
+//    --bg-color-02: linear-gradient(19deg, #503a65 0%, #503a65 100%);
+//    --bg-color-03: linear-gradient(180deg, #574f7d 0%, #574f7d 100%);
+//    --bg-color-04: #95adbe;
+//    --bg-color-05: linear-gradient(180deg, #e0f0ea 0%, #e0f0ea 100%);
+//}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Montserrat, sans-serif;
+}
+
+html {
+    height: 100%;
+    font-size: 62.5%;
+}
+
+body {
+    font-family: sans-serif;
+    /*background-image: url("image.jpg");*/
+    /*background-attachment: fixed;*/
+    /*background-position: bottom;*/
+    /*background-size: cover;*/
+    /*background-repeat: no-repeat;*/
+    min-height: 100%;
+    /*background-image: linear-gradient(*/
+    /*        135deg,*/
+    /*        #00091f, #001340*/
+    /*)*/
+    font-size: 1.6rem;
+}
+
 /* Reset */
 
 HTML, BODY, DIV, SPAN, APPLET, OBJECT, IFRAME, H1, H2, H3, H4, H5, H6, P,
@@ -116,15 +276,6 @@ img {
     max-width: 100%;
 }
 
-body {
-    font-family: "Work Sans", serif;
-    font-size: 14px;
-    display: flex;
-    flex-flow: column;
-    height: 100%;
-    overflow: hidden;
-    color: #757575;
-    /*//background-color: black;*/
-}
+
 
 /* Reset End **************************************/

@@ -1,3 +1,64 @@
+@font-face {
+  font-family: "Sacramento";
+  src: url("font/Sacramento/Sacramento-Regular.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Montserrat";
+  src: url("font/Montserrat/Montserrat-Regular.ttf") format("truetype");
+}
+@font-face {
+  font-family: "IstokWeb";
+  src: url("font/Istok_Web/IstokWeb-Regular.ttf") format("truetype");
+}
+/******************/
+/* COLOR SCHEMES */
+:root {
+  --is-dark: 1;
+  --is-light: 0;
+  --color: rgb(
+                  calc(9 * var(--is-dark) + 245 * var(--is-light)),
+                  calc(0 * var(--is-dark) + 222 * var(--is-light)),
+                  calc(56 * var(--is-dark) + 179 * var(--is-light))
+  );
+  --dark-color: #090038;
+  --light-color: wheat;
+  /*--light-color: red;*/
+  --bg-color-01: linear-gradient(
+                  135deg,
+                  #080029, #110069
+  );
+  --bg-color-02: linear-gradient(19deg, #0f0c4a 0%, #07062b 100%);
+  --bg-color-03: linear-gradient(180deg, #15176d 0%, #171877 100%);
+  --bg-color-04: rgb(30, 32, 136);
+  --bg-color-05: linear-gradient(0deg, rgb(30, 32, 135) 0%, rgb(38, 40, 160) 100%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Montserrat, sans-serif;
+}
+
+html {
+  height: 100%;
+  font-size: 62.5%;
+}
+
+body {
+  font-family: sans-serif;
+  /*background-image: url("image.jpg");*/
+  /*background-attachment: fixed;*/
+  /*background-position: bottom;*/
+  /*background-size: cover;*/
+  /*background-repeat: no-repeat;*/
+  min-height: 100%;
+  /*background-image: linear-gradient(*/
+  /*        135deg,*/
+  /*        #00091f, #001340*/
+  /*)*/
+  font-size: 1.6rem;
+}
+
 /* Reset */
 HTML, BODY, DIV, SPAN, APPLET, OBJECT, IFRAME, H1, H2, H3, H4, H5, H6, P,
 BLOCKQUOTE, PRE, A, ABBR, ACRONYM, ADDRESS, BIG, CITE, CODE, DEL, DFN,
@@ -111,17 +172,6 @@ html {
 
 img {
   max-width: 100%;
-}
-
-body {
-  font-family: "Work Sans", serif;
-  font-size: 14px;
-  display: flex;
-  flex-flow: column;
-  height: 100%;
-  overflow: hidden;
-  color: #757575;
-  /*//background-color: black;*/
 }
 
 /* Reset End **************************************/
