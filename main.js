@@ -1,5 +1,3 @@
-
-
 let layer_state = true;
 let curr_elem_layer_name = null;
 let prev_elem_layer_name = null;
@@ -192,7 +190,10 @@ document.head.appendChild(style);
 
 class Carousel {
     
-    constructor(carouselSelector, isVertical) {
+    constructor(
+        carouselSelector,
+        isVertical
+    ) {
         
         let $this = this;
         this.carousel = document.querySelector(carouselSelector);
@@ -201,30 +202,33 @@ class Carousel {
         this.cellHeight = null;
         this.isVertical = !!isVertical;
         console.log("this.isVertical: ", this.isVertical);
-        this.rotateFn = this.isVertical ?  'rotateX' : 'rotateY';
+        this.rotateFn = this.isVertical ? 'rotateX' : 'rotateY';
         this.cellCount = null;
         this.radius = null;
         this.theta = null;
         this.selectedIndex = 0;
-    
+        
         this.prevButton = document.querySelector('.previous-button');
         // console.log('this.prevButton: ', this.prevButton);
         this.nextButton = document.querySelector('.next-button');
-
+        
         this.prevButton.addEventListener('click', function () {
             $this.selectedIndex--;
             $this.rotateCarousel();
-            $this.findFrontCell();
-        });
-
-        this.nextButton.addEventListener('click', function () {
-            $this.selectedIndex++;
-            $this.rotateCarousel();
+            // $this.findFrontCellPrev();
             $this.findFrontCell();
         });
         
+        this.nextButton.addEventListener('click', function () {
+            $this.selectedIndex++;
+            $this.rotateCarousel();
+            // $this.findFrontCellNext();
+            $this.findFrontCell("next");
+        });
+        
         this.changeCarousel();
-        this.findFrontCell();
+        // this.findFrontCellNext();
+        $this.findFrontCell("next");
     }
     
     changeCarousel() {
@@ -283,25 +287,69 @@ class Carousel {
         }
     }
     
-    findFrontCell () {
+    findFrontCell(direction) {
+        console.log("-----------------------------");
         let modulus = this.selectedIndex % this.cellCount
-        if(modulus === 0) {
-            console.log("this.selectedIndex: ", 4);
-        } else {
-            console.log("this.selectedIndex: ", modulus);
+        if (modulus < 0) {
+            modulus = modulus ? modulus + this.cellCount : modulus
         }
-        
-        for (let i = 0; i < this.cellCount; i++) {
+        for (
+            let i = direction === "next" ? 0 : this.cellCount - 1;
+            direction === "next" ? i < this.cellCount : i >= 0;
+            direction === "next" ? i++ : i--
+        ) {
             let cell = this.cells[i];
             let a = cell.querySelector('a');
-            if(a){
+            if (a) {
                 if (i !== modulus) {
                     cell.querySelector('a').style.opacity = 0.05;
                 } else {
-                    console.log("cell: ", cell);
                     cell.querySelector('a').style.opacity = 1;
                 }
             }
+            
+        }
+        
+    }
+    
+    findFrontCellNext() {
+        console.log("-----------------------------");
+        let modulus = this.selectedIndex % this.cellCount
+        if (modulus < 0) {
+            modulus = modulus ? modulus + this.cellCount : modulus
+        }
+        for (let i = 0; i < this.cellCount; i++) {
+            let cell = this.cells[i];
+            let a = cell.querySelector('a');
+            if (a) {
+                if (i !== modulus) {
+                    cell.querySelector('a').style.opacity = 0.05;
+                } else {
+                    cell.querySelector('a').style.opacity = 1;
+                }
+            }
+            
+        }
+        
+    }
+    
+    findFrontCellPrev() {
+        console.log("-----------------------------");
+        let modulus = this.selectedIndex % this.cellCount
+        if (modulus < 0) {
+            modulus = modulus ? modulus + this.cellCount : modulus
+        }
+        for (let i = this.cellCount - 1; i >= 0; i--) {
+            let cell = this.cells[i];
+            let a = cell.querySelector('a');
+            if (a) {
+                if (i !== modulus) {
+                    cell.querySelector('a').style.opacity = 0.05;
+                } else {
+                    cell.querySelector('a').style.opacity = 1;
+                }
+            }
+            
         }
         
     }
