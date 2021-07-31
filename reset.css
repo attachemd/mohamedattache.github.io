@@ -10,6 +10,10 @@
   font-family: "IstokWeb";
   src: url("font/Istok_Web/IstokWeb-Regular.ttf") format("truetype");
 }
+@font-face {
+  font-family: "RobotoMono";
+  src: url("font/Roboto_Mono/static/RobotoMono-Regular.ttf") format("truetype");
+}
 /******************/
 /* COLOR SCHEMES */
 :root {
