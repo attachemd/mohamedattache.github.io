@@ -6,7 +6,7 @@ body {
   text-align: center;
 }
 body * {
-  font-family: monospace, sans-serif;
+  font-family: "RobotoMono", monospace, sans-serif;
 }
 body a {
   width: calc(9rem * (720 / 1280));
